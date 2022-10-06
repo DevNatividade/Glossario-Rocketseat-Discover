@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,600&display=swap" rel="stylesheet">
+            
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contato | DevN</title>
+        </head>
+
+        <body>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Ente em contato</legend>
+
+                    <label for="orderselect">Assunto:</label><br>
+                    <select name="order" id="orderselect">
+                        <option value="">Selecione a opção </option>
+                        <option value="suporte">Suporte</option>
+                        <option value="sugerir">Sejestão</option>
+                        <option value="reclamar">Reclamação</option>
+                    </select>
+                    <br><br>
+
+                    <label for="name">Nome completo:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Seu nome" required minlength="10">
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="qualquer@gmail.com" required pattern=".+@gmail\.com">
+                    <br><br>
+
+                    <label for="opinion">Sua opnião...</label><br>
+                    <textarea name="opinion" id="opinion" cols="18" rows="6" placeholder="Digite sua opinião aqui" wrap="hard" style="resize: none;"></textarea>
+                    <br><br>
+
+                    <input type="checkbox" value="info" id="info">
+                    <label for="info">Aceito receber novidades por e-mail.</label>
+                    <br><br>
+
+                    <button>Enviar</button>
+                </fieldset>
+            </form>
+        </body>
+    </html>
